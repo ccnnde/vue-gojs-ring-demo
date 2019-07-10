@@ -1,8 +1,8 @@
 {
-  "name": "gojs-vue-webpack",
-  "author": "Northwoods Software",
-  "description": "A GoJS project using vue.js and webpack",
-  "version": "1.0.1",
+  "name": "vue-gojs-ring-demo",
+  "author": "ccnnde",
+  "description": "A GoJS ring demo using vue.js and webpack",
+  "version": "1.0.0",
   "homepage": "https://gojs.net",
   "license": "SEE LICENSE AT https://gojs.net/latest/doc/license.html",
   "scripts": {
