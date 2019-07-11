@@ -214,9 +214,10 @@ export default {
         "Spot",
         {
           locationSpot: go.Spot.Center,
+          locationObjectName: "PAD", // fix the offset of adornment
           selectionObjectName: "PAD",
           resizeObjectName: "PAD",
-          background: "transparent",
+          // background: "transparent",
           rotatable: false,
           resizable: true
         },
@@ -227,8 +228,12 @@ export default {
             fill: null,
             stroke: null
           },
-          new go.Binding("width", "width"),
-          new go.Binding("height", "height")
+          new go.Binding("width", "width", function(w) {
+            return w + 60; // fix the offset of the whole node
+          }),
+          new go.Binding("height", "height", function(w) {
+            return w + 60; // fix the offset of the whole node
+          })
         ),
         $(
           go.Panel,
